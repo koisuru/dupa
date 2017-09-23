@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/czerwony"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pszemek"
+        android:text="1"/>
+    <Button
+        android:id="@+id/czer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gusgus"
+      android:layout_alignParentRight="true"
+        android:text="2"/>
+
+
+    <Button
+        android:id="@+id/q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/miron"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/w"
+        android:layout_alignTop="@+id/w"
+        android:text="7"
+
+        />
+
+    <Button
+        android:id="@+id/w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/miron"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:text="5"
+        />
+
+    <Button
+        android:id="@+id/e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/miron"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/w"
+        android:layout_alignTop="@+id/w"
+        android:text="6"/>
+
+    <Button
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ande"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+     />
+    <Button
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hitor"
+        android:layout_alignParentBottom="true"
+       />
+
+
+</RelativeLayout>
