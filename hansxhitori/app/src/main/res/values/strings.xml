@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">hansxhitori</string>
+    <string name="PSZEMEK">pszemek</string>
+    <string name="hitori">hitori</string>
+    <string name="hans">hans</string>
+    <string name="gusugs">gusgus</string>
+    <string name="kakad">kakad</string>
 </resources>

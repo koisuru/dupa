@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="pszemek">#0800ff</color>
+    <color name="hitor">#ffee00</color>
+    <color name="gusgus">#ff0000</color>
+    <color name="miron">#def7f5</color>
+    <color name="ande">#10ff00</color>
 </resources>
