@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/black"
+    tools:context="pl.koisuru.hansxhitori.MainActivity">
+
+
+    <TextView
+        android:id="@+id/hans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pszemek"
+        android:gravity="center"
+        android:text="@string/hitori"
+       />
+
+    <TextView
+        android:id="@+id/hitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gusgus"
+        android:gravity="center"
+        android:text="@string/kakad"
+        android:layout_below="@+id/hans"
+        android:layout_toRightOf="@+id/hans"
+
+
+
+        />
+
+    <TextView
+        android:id="@+id/miron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/miron"
+        android:gravity="center"
+        android:text="@string/gusugs"
+        android:layout_below="@+id/hitor"
+        android:layout_toRightOf="@+id/hitor"/>
+
+    <TextView
+        android:id="@+id/gusgus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hitor"
+        android:gravity="center"
+        android:text="@string/PSZEMEK"
+        android:layout_below="@+id/miron"
+        android:layout_toRightOf="@+id/miron"/>
+
+    <TextView
+        android:id="@+id/as"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/ande"
+        android:gravity="center"
+        android:text="@string/MIRON"
+        android:layout_below="@+id/gusgus"
+        android:layout_toRightOf="@+id/gusgus"/>
+    <TextView
+        android:id="@+id/sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/hitor"
+        android:gravity="center"
+        android:text="@string/PSZEMEK"
+        android:layout_below="@+id/as"
+        android:layout_toRightOf="@+id/miron"/>
+
+    <TextView
+        android:id="@+id/hj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/miron"
+        android:gravity="center"
+        android:text="@string/gusugs"
+        android:layout_below="@+id/sd"
+        android:layout_toRightOf="@+id/hitor"/>
+    <TextView
+        android:id="@+id/gh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gusgus"
+        android:gravity="center"
+        android:text="@string/kakad"
+        android:layout_below="@+id/hj"
+        android:layout_toRightOf="@+id/hans"/>
+    <TextView
+        android:id="@+id/df"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pszemek"
+        android:gravity="center"
+        android:text="@string/hitori"
+        android:layout_below="@+id/gh"
+
+      />
+    </RelativeLayout>
