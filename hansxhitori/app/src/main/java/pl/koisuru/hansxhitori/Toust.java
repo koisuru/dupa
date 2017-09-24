@@ -36,7 +36,7 @@ public class Toust extends Activity {
 
         przycisk6 = (Button) findViewById(R.id.wu);
 
-        
+
         przycisk7 = (Button) findViewById(R.id.wu);
 
 
