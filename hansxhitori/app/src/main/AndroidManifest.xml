@@ -12,6 +12,10 @@
         <activity android:name=".MainActivity">
         </activity>
         <activity android:name=".Activity">
+
+
+        </activity>
+        <activity android:name=".Toust">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
