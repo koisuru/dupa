@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/roz">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/miron"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/q"/>
+    <TextView
+        android:id="@+id/q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Rejestracja"
+        android:textSize="32dp"
+        android:layout_above="@+id/w"/>
+    <EditText
+        android:id="@+id/w"
+        android:layout_above="@+id/e"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Login"
+        android:inputType="text"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/e"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="@string/Hasło"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/r"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/e"
+        android:hint="powtrórz hasło"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="200dp"
+        android:id="@+id/t"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/r"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/t"
+        android:hint="numer telefonu"
+        android:inputType="number"
+        android:id="@+id/y"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/y"
+        android:layout_centerHorizontal="true"
+        android:text="zarejestruj"/>
+
+
+</RelativeLayout>

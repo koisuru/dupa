@@ -6,4 +6,6 @@
     <string name="gusugs">gusgus</string>
     <string name="kakad">kakad</string>
     <string name="MIRON">miron</string>
+    <string name="Login">login</string>
+    <string name="Hasło">haslo</string>
 </resources>
