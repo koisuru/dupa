@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mir"
+        android:src="@drawable/miron"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mir"
+        android:id="@+id/q"
+        android:background="@color/gugus"
+        android:text="Regulamin"
+        android:textSize="32dp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+
+        />
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/q"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:text="@string/gura"
+                android:id="@+id/w"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/w"
+                android:background="@color/gugus"
+                android:textColor="@android:color/white"
+                android:text="Zaakceptowano"
+                android:id="@+id/przy"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
