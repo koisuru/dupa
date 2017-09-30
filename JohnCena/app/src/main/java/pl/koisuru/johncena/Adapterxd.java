@@ -29,7 +29,7 @@ public class Adapterxd extends RecyclerView.Adapter<Holderxd> {
         View view = LayoutInflater.from(context)
                 .inflate(R.layout.recycle, parent, false);
 
-        return new Holderxd(view, context);
+        return new Holderxd(view, context,this);
     }
 
     @Override
@@ -43,4 +43,16 @@ public class Adapterxd extends RecyclerView.Adapter<Holderxd> {
     public int getItemCount() {
         return lista.size();
     }
+
+    public void usun (int pos){
+        lista.remove(pos);
+        notifyItemRemoved(pos);
+    }
+    public void dodaj (Album album){
+        lista.add(album);
+        notifyItemInserted(lista.size());
+
+
+    }
+
 }
