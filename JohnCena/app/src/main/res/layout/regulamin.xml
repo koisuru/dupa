@@ -45,7 +45,7 @@
                 android:layout_below="@+id/w"
                 android:background="@color/gugus"
                 android:textColor="@android:color/white"
-                android:text="Zaakceptowano"
+                android:text="Zaakceptuj"
                 android:id="@+id/przy"/>
         </LinearLayout>
 
