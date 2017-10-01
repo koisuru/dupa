@@ -39,6 +39,15 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".Stare">
+
+        </activity>
+        <activity android:name=".Google">
+
+        </activity>
+        <activity android:name=".Meil">
+
+        </activity>
     </application>
 
 </manifest>

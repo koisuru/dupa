@@ -53,6 +53,28 @@
                 android:id="@+id/x"
                 android:text="Zabawa"
                 android:textSize="32sp"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/z"
+                android:text="Zabawa stara"
+                android:textSize="32sp"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/l"
+                android:text="Google"
+                android:textSize="32sp"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/k"
+                android:text="Meil"
+                android:textSize="32sp"/>
+
 
 
         </LinearLayout>

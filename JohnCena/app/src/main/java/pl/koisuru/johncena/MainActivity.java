@@ -37,9 +37,20 @@ public class MainActivity extends AppCompatActivity {
                 teksik.setTextColor( getResources().getColor(R.color.miron));
             }
         });
+        if (savedInstanceState != null) {
+            int a = savedInstanceState.getInt("dup");
+            teksik.setTextColor(a);}
 
 
 
 
+    }
+
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        int color =teksik.getTextColors().getDefaultColor();
+        outState.putInt("dup",color);
     }
 }

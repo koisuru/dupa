@@ -18,6 +18,9 @@ public class Menu extends AppCompatActivity {
     private Button przycisk3;
     private Button przycisk4;
     private Button przycisk5;
+    private Button przycisk6;
+    private Button przycisk7;
+    private Button przycisk8;
 
 
     @Override
@@ -27,14 +30,18 @@ public class Menu extends AppCompatActivity {
         przycisk = (Button) findViewById(R.id.m);
         przycisk1 = (Button) findViewById(R.id.n);
         przycisk2 = (Button) findViewById(R.id.b);
-        przycisk3= (Button) findViewById(R.id.v);
+        przycisk3 = (Button) findViewById(R.id.v);
         przycisk4 = (Button) findViewById(R.id.c);
         przycisk5 = (Button) findViewById(R.id.x);
+        przycisk6 = (Button) findViewById(R.id.z);
+        przycisk7 = (Button) findViewById(R.id.l);
+        przycisk8 = (Button) findViewById(R.id.k);
+
 
         przycisk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Regulamin.class);
+                Intent intent = new Intent(getApplicationContext(), Regulamin.class);
                 startActivity(intent);
             }
         });
@@ -43,7 +50,7 @@ public class Menu extends AppCompatActivity {
         przycisk1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -51,7 +58,7 @@ public class Menu extends AppCompatActivity {
         przycisk2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Aktywnosc.class);
+                Intent intent = new Intent(getApplicationContext(), Aktywnosc.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +66,7 @@ public class Menu extends AppCompatActivity {
         przycisk3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Aktywno.class);
+                Intent intent = new Intent(getApplicationContext(), Aktywno.class);
                 startActivity(intent);
             }
         });
@@ -67,15 +74,32 @@ public class Menu extends AppCompatActivity {
         przycisk4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Akty.class);
+                Intent intent = new Intent(getApplicationContext(), Akty.class);
                 startActivity(intent);
             }
         });
 
         przycisk5.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View view) {
-                Intent intent= new Intent(getApplicationContext(),Ak1.class);
+                Intent intent = new Intent(getApplicationContext(), Ak1.class);
+                startActivity(intent);
+            }
+        });
+        przycisk6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Stare.class);
+                startActivity(intent);
+            }
+        });
+        przycisk7.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Google.class);
+                startActivity(intent);
+            }
+        });
+        przycisk8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Meil.class);
                 startActivity(intent);
             }
         });
