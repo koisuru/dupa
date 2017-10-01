@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/m"
+                android:text="REGULAMIN"
+                android:textSize="32sp"
+                />
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/n"
+                android:text="Kolorki"
+                android:textSize="32sp"
+                />
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/b"
+                android:text="Lista"
+                android:textSize="32sp"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/v"
+                android:text="Lista2"
+                android:textSize="32sp"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/c"
+                android:text="Streszczenia"
+                android:textSize="32sp"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="82dp"
+                android:layout_gravity="center"
+                android:id="@+id/x"
+                android:text="Zabawa"
+                android:textSize="32sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

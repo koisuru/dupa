@@ -20,21 +20,23 @@
         </activity>
         <activity android:name=".Aktywno">
 
-
-
         </activity>
         <activity android:name=".Akty">
 
         </activity>
         <activity android:name=".Ak1">
+
+        </activity>
+        <activity android:name=".Ak2">
+
+
+        </activity>
+        <activity android:name=".Menu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".Ak2">
-
 
         </activity>
     </application>

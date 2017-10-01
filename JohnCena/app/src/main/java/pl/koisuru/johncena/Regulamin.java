@@ -1,5 +1,6 @@
 package pl.koisuru.johncena;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,6 +12,8 @@ public class Regulamin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Intent intent = getIntent();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.regulamin);
 

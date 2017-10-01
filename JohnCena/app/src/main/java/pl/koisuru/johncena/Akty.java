@@ -28,6 +28,7 @@ public class Akty extends AppCompatActivity {
         ksiazkas.add(new Ksiazka(getResources().getString(R.string.ore), getResources().getString(R.string.oreo)));
         ksiazkas.add(new Ksiazka(getResources().getString(R.string.one), getResources().getString(R.string.oneo)));
         ksiazkas.add(new Ksiazka(getResources().getString(R.string.ojciec), getResources().getString(R.string.ojcieco)));
+
         Ada ada = new Ada(this,ksiazkas);
         pager.setAdapter(ada);
 
