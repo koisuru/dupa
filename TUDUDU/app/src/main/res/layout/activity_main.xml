@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="pl.koisuru.tududu.MainActivity">
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/warstwa">
 
     <EditText
         android:id="@+id/q"
@@ -11,7 +15,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:hint="coś" />
-`
     <Button
         android:id="@+id/w"
         android:layout_width="wrap_content"
@@ -19,30 +22,43 @@
         android:layout_margin="10dp"
         android:layout_toRightOf="@+id/q"
         android:text="Szukaj" />
+    </LinearLayout>
 
-    <ScrollView
+
+    <RelativeLayout
+        android:background="@android:color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/w">
-        <RelativeLayout
+        android:layout_below="@+id/warstwa">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/t"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <TextView
-                android:id="@+id/e"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-            <ProgressBar
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/r"
-                android:layout_centerHorizontal="true"
-                android:visibility="invisible"/>
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
 
 
-        </RelativeLayout>
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ustawienia"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/zmiana"/>
 
-
-    </ScrollView>
-
-`
 </RelativeLayout>

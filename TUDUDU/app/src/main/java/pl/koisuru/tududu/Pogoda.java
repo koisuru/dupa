@@ -9,11 +9,13 @@ public class Pogoda {
     private String data;
     private String opis;
     private Double temp;
-    public Pogoda (String miasto, String data, String opis, Double temp){
+    private String icon;
+    public Pogoda (String miasto, String data, String opis, Double temp, String icon){
         this.setMiasto(miasto);
         this.setData(data);
         this.setOpis(opis);
         this.setTemp(temp);
+        this.setIcon(icon);
     }
 
     public String getMiasto() {
@@ -46,5 +48,13 @@ public class Pogoda {
 
     public void setTemp(Double temp) {
         this.temp = temp;
+    }
+
+    public String getIcon() {
+        return icon;
+    }
+
+    public void setIcon(String icon) {
+        this.icon = icon;
     }
 }

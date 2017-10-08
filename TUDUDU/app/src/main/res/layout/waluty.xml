@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Przeliczznik walut."
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/wu"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="30sp"
+        android:hint="waluta 1"
+        android:id="@+id/qu"
+        android:layout_below="@+id/wu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/qu"
+        android:layout_below="@+id/wu"
+        android:layout_marginTop="30dp"
+        android:text="na"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/eu"
+        android:hint="waluta 2"
+        android:layout_alignRight="@+id/wu"
+        android:layout_alignBaseline="@id/qu"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qu"
+        android:id="@+id/tu"
+        android:text="przelicz"
+
+        android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/tu"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/ru"
+                android:gravity="center"
+                android:textSize="24sp"/>
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:visibility="invisible"
+                android:id="@+id/yu"
+               />
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>
