@@ -40,6 +40,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private final String API_KAY = "&APPID=e600af897818f3effd73326b4559b1f8";
     private final String Base_url = "http://api.openweathermap.org/data/2.5/forecast?q=";
 
+
+
     String jednostki = "&units=metric";
 
     private ProgressBar progressBar;
@@ -47,12 +49,15 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private RecyclerView recyclerView;
     private final int Loader_id = 34;
     private Button przycisk2;
+    Baza db;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        db = new Baza(this);
         editText = (EditText) findViewById(R.id.q);
         text = (TextView) findViewById(R.id.e);
         przycisk = (Button) findViewById(R.id.w);
@@ -149,7 +154,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             }
 
         } else {
-            Toast.makeText(getApplicationContext(), "nie masz internetu", Toast.LENGTH_SHORT).show();
+           Adapterxd adapterxd = new Adapterxd(this, db.getAllPogodas());
+            recyclerView.setAdapter(adapterxd);
         }
 
     }
@@ -203,6 +209,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
 
         if (data != null && !data.equals("")) {
             pogo.clear();
+            db.clearRepos();
             try {
                 JSONObject in = new JSONObject(data);
 
@@ -220,6 +227,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                     String icon = opise.getString("icon");
                     Pogoda pogoda = new Pogoda(city, datas, opisem, temp, icon);
                     pogo.add(pogoda);
+                    db.addRepo(pogoda);
                 }
                 Adapterxd adapterxd = new Adapterxd(getBaseContext(), pogo);
                 recyclerView.setAdapter(adapterxd);

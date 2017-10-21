@@ -10,6 +10,11 @@ public class Pogoda {
     private String opis;
     private Double temp;
     private String icon;
+
+    public Pogoda(){
+
+    }
+
     public Pogoda (String miasto, String data, String opis, Double temp, String icon){
         this.setMiasto(miasto);
         this.setData(data);
