@@ -17,7 +17,7 @@ import java.util.List;
 public class Baza extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "pogoda.db";
-    private static final int DB_VERSION = 1;
+    private static final int DB_VERSION = 2;
     private static final String pogotable = "pogoda";
     private static final String data = "data";
     private static final String opis = "opis";
@@ -48,6 +48,9 @@ public class Baza extends SQLiteOpenHelper {
         values.put(icon, pogo.getIcon());
         values.put(temp, pogo.getTemp());
         values.put(miasto, pogo.getMiasto());
+
+        db.insert(pogotable, null, values);
+        db.close();
     }
     public List<Pogoda>getAllPogodas(){
         List<Pogoda> pogodas = new LinkedList<>();
@@ -66,7 +69,7 @@ public class Baza extends SQLiteOpenHelper {
                 pogoda.setIcon(cursor.getString(4));
 
             }
-            while (cursor.moveToLast());
+            while (cursor.moveToNext());
         }
         db.close();
         return pogodas;
@@ -74,7 +77,7 @@ public class Baza extends SQLiteOpenHelper {
     }
     public void clearRepos(){
         SQLiteDatabase db = getWritableDatabase();
-        db.execSQL("delate from " + pogotable);
+        db.execSQL("delete from " + pogotable);
         db.close();
     }
 }
