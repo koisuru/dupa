@@ -75,6 +75,8 @@ private PagerAdapet pagerAdapet;
         tabLayout.addTab(tabLayout.newTab().setText("twoje miasto"));
         tabLayout.addTab(tabLayout.newTab().setText("szukajka"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        startService(new Intent(this,Server.class));
+
 
         pager=(ViewPager)findViewById(R.id.frame);
 

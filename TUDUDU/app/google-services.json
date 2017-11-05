@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "965951922971",
+    "firebase_url": "https://tududu-cb3e0.firebaseio.com",
+    "project_id": "tududu-cb3e0",
+    "storage_bucket": "tududu-cb3e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:965951922971:android:050c93c8a8562987",
+        "android_client_info": {
+          "package_name": "pl.koisuru.tududu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "965951922971-18lsmn6c0dmakncsta3uodd1b7h0p992.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyKRpX6cGIXKOgtYLUdwTW-WIjX5kw46I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
